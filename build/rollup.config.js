@@ -2,6 +2,7 @@
 import fs from 'fs';
 import path from 'path';
 import vue from 'rollup-plugin-vue';
+import vuetify from 'rollup-plugin-vuetify'
 import alias from '@rollup/plugin-alias';
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
@@ -41,12 +42,6 @@ const baseConfig = {
       'process.env.NODE_ENV': JSON.stringify('production'),
     },
     vue: {
-      css: true,
-      template: {
-        isProduction: true,
-      },
-    },
-    vuetify: {
       css: true,
       template: {
         isProduction: true,
@@ -98,6 +93,7 @@ if (!argv.format || argv.format === 'es') {
       replace(baseConfig.plugins.replace),
       ...baseConfig.plugins.preVue,
       vue(baseConfig.plugins.vue),
+      vuetify(),
       ...baseConfig.plugins.postVue,
       babel({
         ...baseConfig.plugins.babel,

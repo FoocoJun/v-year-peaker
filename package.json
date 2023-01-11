@@ -1,6 +1,6 @@
 {
   "name": "v-year-peaker",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "",
   "license": "MIT",
   "author": {
@@ -12,9 +12,9 @@
     "peaker",
     "year"
   ],
-  "main": "src/v-year-peaker.vue",
+  "main": "dist/v-year-peaker.ssr.js",
   "browser": "dist/v-year-peaker.esm.js",
-  "module": "src/v-year-peaker.vue",
+  "module": "dist/v-year-peaker.esm.js",
   "unpkg": "dist/v-year-peaker.min.js",
   "files": [
     "dist/*",
@@ -30,6 +30,7 @@
     "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife"
   },
   "dependencies": {
+    "rollup-plugin-vuetify": "^0.2.4",
     "vuetify": "^2.6.13"
   },
   "devDependencies": {
