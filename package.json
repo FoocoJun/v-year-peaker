@@ -17,7 +17,6 @@
   "module": "src/v-year-peaker.vue",
   "unpkg": "src/v-year-peaker.vue",
   "files": [
-    "dist/*",
     "src/**/*.vue"
   ],
   "sideEffects": false,
