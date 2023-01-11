@@ -47,6 +47,12 @@ const baseConfig = {
         isProduction: true,
       },
     },
+    vuetify: {
+      css: true,
+      template: {
+        isProduction: true,
+      },
+    },
     postVue: [
       resolve({
         extensions: ['.js', '.jsx', '.ts', '.tsx', '.vue'],
@@ -93,7 +99,6 @@ if (!argv.format || argv.format === 'es') {
       replace(baseConfig.plugins.replace),
       ...baseConfig.plugins.preVue,
       vue(baseConfig.plugins.vue),
-      vuetify(),
       ...baseConfig.plugins.postVue,
       babel({
         ...baseConfig.plugins.babel,
@@ -107,6 +112,7 @@ if (!argv.format || argv.format === 'es') {
           ],
         ],
       }),
+      vuetify(baseConfig.plugins.vuetify),
     ],
   };
   buildFormats.push(esConfig);
