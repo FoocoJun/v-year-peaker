@@ -1,5 +1,9 @@
 # v-year-peaker
 
+<img width="300" alt="스크린샷 2023-01-11 오후 8 17 37" src="https://user-images.githubusercontent.com/85068289/211793205-f830bf28-d28d-48d1-a391-fd0ad1a9b498.png">
+
+
+
 vuetify v-date-peaker do not provide type: 'year' (23.1.10.)
 
 You can use this year-peaker to Resolve vuetify's v-date-peaker TODO.
@@ -18,6 +22,35 @@ You can use this year-peaker to Resolve vuetify's v-date-peaker TODO.
 ```
 npm i v-year-peaker
 ```
+
+Import and Set on components and use It.
+
+```js
+<template>
+  <v-app>
+    <v-year-peaker :on-select-year="setSelectedYear"/>
+  </v-app>
+</template>
+
+<script>
+import VYearPeaker from 'v-year-peaker'
+
+export default {
+  name: 'App',
+  components: { VYearPeaker },
+  data: () => ({
+    selectedYear:(new Date().getUTCFullYear() - 1).toString(),
+  }),
+  methods: {
+    setSelectedYear(input) {
+      this.selectedYear = input;
+    },
+  }
+};
+</script>
+```
+
+
 
 ## How-It-Works
 
