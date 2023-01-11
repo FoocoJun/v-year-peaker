@@ -12,7 +12,7 @@
     "peaker",
     "year"
   ],
-  "main": "dist/v-year-peaker.ssr.js",
+  "main": "dist/v-year-peaker.esm.js",
   "browser": "dist/v-year-peaker.esm.js",
   "module": "dist/v-year-peaker.esm.js",
   "unpkg": "dist/v-year-peaker.min.js",
