@@ -1,6 +1,6 @@
 {
   "name": "v-year-peaker",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "",
   "license": "MIT",
   "author": {
@@ -12,10 +12,10 @@
     "peaker",
     "year"
   ],
-  "main": "dist/v-year-peaker.ssr.js",
-  "browser": "dist/v-year-peaker.esm.js",
-  "module": "dist/v-year-peaker.esm.js",
-  "unpkg": "dist/v-year-peaker.min.js",
+  "main": "src/v-year-peaker.vue",
+  "browser": "src/v-year-peaker.vue",
+  "module": "src/v-year-peaker.vue",
+  "unpkg": "src/v-year-peaker.vue",
   "files": [
     "dist/*",
     "src/**/*.vue"
