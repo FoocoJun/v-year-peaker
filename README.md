@@ -1,10 +1,8 @@
 # v-year-peaker
 
-<img width="300" alt="스크린샷 2023-01-11 오후 8 17 37" src="https://user-images.githubusercontent.com/85068289/211793205-f830bf28-d28d-48d1-a391-fd0ad1a9b498.png">
+### Now You Can Use v-year-peaker w/ vuetify! (1.2.0)
 
-
-
-vuetify v-date-peaker do not provide type: 'year' (23.1.10.)
+vuetify v-date-peaker is not providing a type: 'year' yet (23.1.10.)
 
 You can use this year-peaker to Resolve vuetify's v-date-peaker TODO.
 
@@ -49,6 +47,8 @@ export default {
 };
 </script>
 ```
+
+<img width="300" alt="스크린샷 2023-01-11 오후 8 17 37" src="https://user-images.githubusercontent.com/85068289/211793205-f830bf28-d28d-48d1-a391-fd0ad1a9b498.png">
 
 
 
