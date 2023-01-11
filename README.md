@@ -120,3 +120,6 @@ export default Vue.extend({
   </div>
 </template>
 ```
+
+## Next
+I hope They Patch soon or I'll try to Contribute on TODO catch update this.
